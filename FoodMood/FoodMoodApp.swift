@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import CoreData
+internal import CoreData
 
 @main
 struct FoodMoodApp: App {
@@ -14,7 +14,7 @@ struct FoodMoodApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DailyLogListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

@@ -6,12 +6,8 @@
 //
 //
 
-public import Foundation
-public import CoreData
-
-public typealias LogEntryCoreDataClassSet = NSSet
+import Foundation
+internal import CoreData
 
 @objc(LogEntry)
-public class LogEntry: NSManagedObject {
-
-}
+public class LogEntry: NSManagedObject { }

@@ -6,11 +6,8 @@
 //
 //
 
-public import Foundation
-public import CoreData
-
-
-public typealias LogEntryCoreDataPropertiesSet = NSSet
+import Foundation
+import CoreData
 
 extension LogEntry {
 
@@ -25,9 +22,4 @@ extension LogEntry {
     @NSManaged public var date: Date?
     @NSManaged public var imageData: Data?
     @NSManaged public var aiPrediction: String?
-
-}
-
-extension LogEntry : Identifiable {
-
 }
